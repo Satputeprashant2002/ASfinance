@@ -1,0 +1,78 @@
+/* Existing styles */
+.Insurance{
+  overflow:hidden;
+}
+
+
+
+.whole-three-tit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.imgM img {
+    height: 25rem; /* Maintain aspect ratio */
+    width: 30rem; /* Full width */
+    border-radius: 2rem;
+    margin: 2rem;
+    object-fit: cover;
+}
+
+.text-tit {
+    background: linear-gradient(180deg, #ade6cd, #3d7b98);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    height: auto;
+    width: 20rem;
+    margin: 30px;
+}
+
+.four-insu-tog {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.first-insu-four {
+    background: linear-gradient(180deg, #ade6cd, #3d7b98);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 20rem;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .whole-three-tit {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .imgM{
+        width:98%;
+    }
+
+    .imgM img {
+        height: auto; /* Allow height to adjust */
+        width: 100%; /* Full width */
+        max-width: 100%; /* Ensure responsiveness */
+        margin-left:0px;
+    }
+
+    .text-tit {
+        width: 82%; /* Adjust width for smaller screens */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+
+    .four-insu-tog {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .first-insu-four {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}

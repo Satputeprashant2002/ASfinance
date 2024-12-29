@@ -1,0 +1,306 @@
+.footer {
+    background-color: #103a52;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+    position: relative;
+    width: 100%;
+    height: auto; /* Maintain original height */
+    overflow: hidden;
+    
+    
+}
+
+.Together {
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   
+}
+
+.contact {
+   
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 14rem;
+    margin-left: 80px;
+    color:white;
+    padding: 1rem;
+    width: 40%; /* Maintain width for desktop */
+    max-width: 600px;
+    margin: 60px; /* Center align the contact box */
+    font-size: large;
+    margin-top: 1rem;
+    
+}
+
+.texy {
+    display: flex;
+    flex-direction: row;
+    width: 1200px; /* Keep original width */
+    margin-left: 0px;
+    height: 500px;   
+}
+
+.Quick-Links a{
+    text-decoration: none;
+    color: white;
+}
+
+.tog-lis.highlighted {
+    background-color: #f0f0f0; 
+    border: 2px solid #ffcc00; 
+    padding: 10px; 
+  }
+  
+  .Quick-Links li{
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+  }
+
+.Quick-Links, .Services {
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px;
+   
+    color: white;
+    width: 150px; /* Maintain width for desktop */
+    align-items: center;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-self: left;
+    flex-direction: row;
+    gap: 1rem;
+}
+.darr i{
+    margin-top: 1.5rem;
+}
+ 
+.sub-cont{
+    display: flex;
+}
+
+.Addcol{
+    margin-left: 2rem;
+   margin-top:-1.6rem;
+}
+
+.Addcol1{
+    margin-left: 2.4rem;
+}
+
+.icon{
+    margin-top: 1rem;
+}
+
+.Services{
+ margin-left: 10rem;
+ width:30rem;
+ height: 15rem;
+}
+
+.sub-cont i{
+    margin-right:-1rem ;
+}
+.tog-lis{
+    display: flex;
+    gap:2rem;
+    margin-top:-1rem;
+
+}
+
+.first-serv{
+    text-align: left;
+}
+
+.Services h2{
+   margin-right: 9rem;
+}
+.my-image {
+    height: 24px;
+    width: 24px;
+}
+.image-size {
+    height: 12px; /* Keep original GIF size */
+    width: 20px; /* Keep original GIF size */
+}
+.Copyright {
+    border-top:2px white solid;
+    text-align: center;
+    color: white;
+    margin-top: -12rem;
+}
+
+/* Basic styling for the loan services card */
+.loan-services-card {
+    position: absolute;
+    top: 0;
+    right: -300px; /* Initially off-screen on the right */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .loan-services-card a{
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .loan-services-card.open {
+    right: 0; /* Slide in from the right */
+  }
+  
+  .loan-services-card-content {
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .loan-services-card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .loan-services-card ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .loan-services-card li {
+    margin: 10px 0;
+  }
+  
+  .loan-services-card .close-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #003e71;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: color 0.3s;
+  }
+  
+  .loan-services-card .close-btn:hover {
+    color: #4faaa4;
+  }
+  
+  /* Make sure the footer content isn't hidden when the card is open */
+  .footer {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Style for the Loan services button */
+  button {
+    margin: 0;  /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  border: none; /* Remove default border */
+  color: white;
+  background: none; /* Remove default background */
+  font-family: inherit; /* Inherit font family */
+  font-size: inherit; /* Inherit font size */
+  line-height: normal;
+  cursor: pointer;
+  }
+  
+  
+  
+
+
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Allow height to adjust */
+    }
+
+    .Together {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center align */
+    }
+
+    .contact {
+        width: 90%; /* Full width for mobile */
+        margin: 20px auto; /* Center align */
+    }
+
+    .texy {
+        flex-direction: column; /* Stack service links vertically */
+        width: 100%; /* Full width for mobile */
+        margin: 0; /* Reset margin */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .tog-lis{
+   
+        display: flex;
+        align-content: center;
+        margin-left: 4rem;
+       
+    }
+    .Services h2{
+        margin-right: 0rem;
+     }
+
+    .Quick-Links
+    {
+        width: 90%; 
+        margin-left: 0; 
+        text-align: center; 
+        margin-top: 10px; 
+        justify-content: center;
+        
+    }
+    .Quick-Links li{
+        text-align: center;
+     }
+
+    .sub-cont{
+        display: flex;
+    }
+    .Services{
+        justify-content: space-around;
+        width:100%;
+        text-align: center;
+        margin-left: -24px;
+       
+    }
+   
+    .Quick-Links ul,
+    .Services ul {
+        list-style-type: none;
+        padding: 0; /* Remove padding */
+    }
+
+    .Quick-Links li,
+    .Services li {
+        margin: 5px 0; /* Add vertical spacing */
+    }
+
+    .my-image {
+        height: 24px; /* Keep original image size */
+        width: 24px; /* Keep original image size */
+    }
+
+    
+
+    .image-size {
+        height: 12px; /* Keep original GIF size */
+        width: 20px; /* Keep original GIF size */
+    }
+
+    .Copyright {
+        text-align: center;
+        color: white;
+        margin-top:10px;
+    }
+}

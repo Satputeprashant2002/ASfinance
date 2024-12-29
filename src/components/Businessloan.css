@@ -1,0 +1,15 @@
+.sideby{
+    display:flex;
+    gap:2rem;
+    padding: 2rem;
+   
+}
+
+@media (min-width: 768px){
+    .sideby{
+        display:flex;
+        gap: 2rem;
+        padding: 2rem;
+        padding-left: 10rem;
+    }
+}

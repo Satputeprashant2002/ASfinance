@@ -1,0 +1,153 @@
+/* General Styles */
+
+
+.Emi {
+    font-family: Poppins, sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+   height: auto;
+    overflow:hidden;
+    
+}
+
+.Emi-heading {
+    width: 100%;
+    height: 150px; 
+    background: linear-gradient(180deg, #ade6cd, #3d7b98);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center heading vertically and horizontally */
+}
+
+.Emi-head {
+    color: white; 
+    font-size: 2.5rem; /* Adjust font size for mobile */
+    font-weight: bold;
+    text-align: center; /* Center text */
+}
+
+.cal-stat {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column; /* Change to column for better stacking on mobile */
+}
+
+.stat {
+    margin: 20px 0; /* Adjust margin for spacing */
+    width: 100%; /* Full width */
+}
+
+.stat-head {
+    text-align: left;
+    color: #00008b;
+    font-weight: bold;
+}
+
+.spa1, .spa, .spa2 {
+    font-size: .8rem;
+}
+
+.Home-loan {
+    border: 1px dashed #00008b;
+    padding: 20px;
+    margin-top: 30px;
+    margin-right: 6rem;
+}
+
+.table-bordered {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table-bordered td,
+.table-bordered th {
+    padding: 1rem;
+    font-size: .9rem;
+    text-align: left;
+}
+
+/* Calci Component Styles */
+.cal-act {
+    padding: 20px 15px;
+    width: 100%; /* Full width */
+}
+
+.revieww {
+    display: flex;
+    align-items: center;
+}
+
+.logo1{
+margin-left: -4rem;
+}
+
+.logo1 img{
+    height: 150px;
+    width: auto; 
+}
+
+.star img {
+    width: 76px; /* Adjust star rating size */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    
+    .Emi-head {
+        font-size: 2rem; /* Reduce font size */
+    }
+
+    .Home-loan {
+        justify-self: center;
+        width:80%;
+        margin-right: 6rem;
+    }
+
+    .logo1 img{
+        height: 150px;
+        width: auto; 
+        margin-left: 1rem;
+    }
+
+    .table-bordered td,
+.table-bordered th{
+    padding: 0.5rem;
+}
+
+.cal-act{
+    
+    align-self: center;
+    margin-left: -3rem;
+    padding: 1rem;
+}
+
+
+    .cal-stat {
+        flex-direction: column; /* Stack elements */
+    }
+
+    .stat {
+        width: 100%; /* Full width for stat */
+    }
+
+    .calci-calculator {
+        width: 90%; /* Reduce width for smaller screens */
+    }
+
+    .input-group {
+        flex-direction: column; /* Stack input fields */
+    }
+
+    .input-item {
+        width: 100%; /* Full width for input items */
+        margin-bottom: 10px; /* Space between items */
+    }
+
+    .calculate-button {
+        
+        width: 100%; /* Full width button */
+    }
+}

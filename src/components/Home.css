@@ -1,0 +1,419 @@
+
+
+.home-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+   overflow: hidden;
+}
+
+.image-slider-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.image-slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.slider-container {
+    position: absolute;
+    text-align: left;
+    left: 10%;
+    bottom: 20%;
+    width: 40%;
+    overflow: hidden;
+    padding: 10px ;
+    background-color: rgba(79, 64, 64, 0.5);
+}
+
+.slider {
+    height: 13.5%;
+    width:100%;
+    display: flex;
+   
+    animation: slide 15s infinite;
+    text-align: left;
+}
+
+.slide {
+    min-width: 100%;
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    
+    font-size: 1.2rem;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 1rem;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    flex: 1;
+    padding: 1.5rem;
+    font-size: 1rem;
+    width:11rem;
+    margin: 10px;
+    
+    height: 9rem;
+    background: linear-gradient(180deg, #add8e6, #3d3d98);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.icon-container {
+    width: 7%;
+    height: 15%;
+    background: linear-gradient(135deg, #add8e6, #00008b);
+    border-radius: 100%;
+    padding: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.services-section {
+    padding: 20px;
+}
+
+.services-section h2 {
+    color: #00008b;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.service-card-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: space-around; /* Space cards evenly */
+}
+
+.service-card {
+    width:14rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    margin: 1rem; 
+    font-weight: bold;
+    /* 5 cards per row */
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: background-col  or 0.3s ease;
+}
+
+.service-card:hover {
+    background: linear-gradient(180deg, #add8e6, #38389c);
+    color: white;
+}
+
+.icon-container i {
+    color: white;
+    font-size: 24px;
+}
+
+.learn{
+    font-size: 1rem;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: .5rem;
+    margin-top: -3rem;
+}
+
+.partner-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37.04%; 
+    overflow: hidden;
+    font-size: 1rem; 
+}
+
+.partner-image {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    position: absolute; 
+    z-index: 0; 
+}
+
+.partner-text {
+    height: 350px;
+    width: 100%;
+    background: linear-gradient(
+        rgba(173, 216, 230, 0.7), 
+        rgba(0, 0, 139, 0.7) 
+    ); 
+    color: white;
+    z-index: 2; 
+    text-align: center; 
+    border-radius: 10px; 
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.partner-section h6 {
+    margin-top: 100px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.learn-more{
+    font-size:.9rem;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.Why-us {
+    display: flex;
+    flex-direction: column; /* Stack items on small screens */
+    text-align: center;
+    width: 90%;
+   
+    justify-content: center; /* Center items */
+    font-size: 2em; /* Default font size */
+    margin: 1rem;
+    padding: 1rem;
+    margin-left:-10px;
+}
+
+.text-whol {
+    margin-top: 3%;
+    font-size: 1rem;
+    width: 100%; /* Full width on mobile */
+    min-height: 200px;
+    text-align: center;
+    background: linear-gradient(
+        rgba(173, 216, 230, 0.7), 
+        rgba(0, 0, 139, 0.7)
+    ); 
+    padding: 1rem;
+    border-radius: 20px;
+    
+}
+
+.why-image {
+    width: 90%; /* Full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    margin: 1rem; /* Add margin on top and bottom */
+}
+
+.why-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 4rem;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+
+    .image-slider-container {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+    }
+    
+    .image-slider-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+        
+    .slider-container {
+        position: absolute;
+        text-align: left;
+        left: 10%;
+        height: auto;
+        bottom: 20%;
+        width: 40%;
+        overflow: hidden;
+        padding: 10px ;
+        background-color: rgba(79, 64, 64, 0.5);
+    }
+    
+    .slider {
+        height: 13.5%;
+        width:100%;
+        display: flex;
+        
+        animation: slide 15s infinite;
+        text-align: left;
+    }
+    
+    .slide {
+        min-width: 100%;
+        width: 20%;
+        padding: 20px;
+        text-align: left;
+        box-sizing: border-box;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .slide h2,h3{
+        justify-self: left;
+    }
+
+    .Why-us {
+        flex-direction: row; /* Side by side on larger screens */
+        justify-content: space-around;
+    }
+
+    .text-whol {
+        width: 40%; /* Restore width for larger screens */
+    }
+
+    .learn{
+        margin-top: -3rem;
+    }
+
+    .why-image {
+        width: 25rem; /* Fixed width for images on larger screens */
+        height: 17.375rem; /* Fixed height */
+    }
+}
+
+
+.icon-section{
+    font-size: 1rem;
+ display:flex;
+ background:  linear-gradient(
+        rgba(173, 216, 230, 0.7), 
+        rgba(0, 0, 139, 0.7) 
+    ); 
+    justify-content: center;
+    padding: 3rem;
+    gap:10%;
+    text-align: center;
+}
+.work{
+    justify-content: center;
+    text-align: center;
+}
+.icon-container1{
+ justify-content: center;
+}
+
+.icon1{
+    margin-left:37%;
+    font-size:1.3rem;
+    width: 10%;
+    height: 20%;
+    color: white;
+    background: linear-gradient(135deg, #add8e6, #38389c);
+    border-radius: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    color:#00008b;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.choice-partners {
+    width: 100%;
+    gap: 10%;
+    text-align: center; /* Center text for headings */
+}
+
+.image-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center images */
+    padding: 1rem;
+    border: 1px solid black; /* Corrected border size */
+}
+
+.image-container img {
+    height: 117px; /* Fixed height */
+    width: 160px; /* Fixed width */
+    padding: 1rem; /* Space between images */
+    object-fit: contain;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .image-container img {
+        height: 80px; /* Adjust height for smaller screens */
+        width: auto; /* Let width adjust to maintain aspect ratio */
+        max-width: 100px; /* Limit maximum width */
+    }
+
+    .icon-container1{
+        height: 180px;
+        font-size: .9rem;
+        padding: .3rem;
+    }
+  
+    .icon1{
+        margin-top: -15px;
+        margin-left: 1rem;
+        height: 1.5rem;
+        width:.7rem;
+    }
+
+    .image-container {
+        justify-content: space-evenly; /* Evenly space images on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container img {
+        height: 60px; /* Further reduce height for very small screens */
+        max-width: 80px; /* Limit max width further */
+    }
+}

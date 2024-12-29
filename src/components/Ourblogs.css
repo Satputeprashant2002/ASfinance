@@ -1,0 +1,101 @@
+.Our-Blogs {
+    width: 100%;
+    padding: 1rem; /* Add padding for better spacing */
+    overflow:hidden;
+}
+
+.sta-head{
+    color:#00008b;
+    padding-left: 5rem;
+}
+
+.credit-score {
+    padding: 1rem;
+    width: 45%; /* Maintain width for larger screens */
+    border-radius: 1rem;
+    background: linear-gradient(180deg, #ade6cd, #3d7b98);
+    margin: 0px 20px 40px 90px;
+    height: auto;
+}
+
+.image-text {
+    display: flex;
+    gap: 7rem; /* Spacing between text and images */
+}
+
+.blo-img {
+    margin-top: -40px; /* Adjust this margin as needed */
+}
+
+.blo-img1 img {
+    height: 190px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.person-info {
+    background: linear-gradient(180deg, #ade6cd, #3d7b98);
+    padding: 1rem 2rem ;
+    border-radius: 20px;
+    margin: 30px;
+    margin-left: 5rem;
+}
+
+.imp{
+    font-weight: bold;
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .credit-score {
+        width: 93%; /* Full width on mobile */
+        margin: 0 0 20px 0; /* Reset margins for better spacing */
+        padding: 1rem;
+    }
+
+    .image-text {
+        flex-direction: column; /* Stack text and images vertically */
+        gap: 20px; /* Reduce gap for smaller screens */
+    }
+
+    .blo-img {
+
+        justify-content: center; /* Center images */
+        margin-top: 0; /* Reset margin */
+    }
+
+    .blo-img1 img {
+        justify-self: center;
+        width: 96%; /* Full width for images on mobile */
+         /* Maintain max width */
+    }
+    .sta-head{
+       padding-left: 0rem;
+    }
+
+    h1, h2 {
+        text-align: center; /* Center align headings on mobile */
+    }
+    .person-info {
+        padding: 1rem; /* Reduce padding on smaller screens */
+        margin: 15px; /* Reduce margin on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    h2 {
+        font-size: 1.25rem; /* Adjust subheading size */
+    }
+
+    ul {
+        padding-left: 1.5rem; /* Adjust list padding */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+}

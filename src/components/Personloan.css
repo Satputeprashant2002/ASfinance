@@ -1,0 +1,84 @@
+.Ploan {
+    height: auto;
+    overflow:hidden;
+}
+
+.Personal-loan-tog {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    align-items: center; /* Center items */
+}
+
+.p-text {
+    background: linear-gradient(180deg, #ade6cd, #3d7b98);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin: 30px;
+    width: 80%; /* Full width on mobile */
+    max-width: 30rem; /* Maximum width */
+    font-size: 1rem;
+}
+
+.pimg {
+    position: relative;
+    width: 96%; /* Make the image container responsive */
+    max-width: 30rem; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the image */
+}
+
+.pimg img {
+    height: 25rem;/* Maintain aspect ratio */
+    width: 100%; /* Full width */
+    border-radius: 2rem;
+}
+
+.img-overlay-text {
+    position: absolute; /* Position text absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning */
+    color: #00008b; /* Text color */
+    font-size: 2rem; /* Adjust font size for readability */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional shadow for readability */
+}
+
+.Choose-ploan {
+    margin-top: 3rem;
+}
+
+.Choose-l-three {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    align-items: center; /* Center items */
+}
+
+.p-text1 {
+    background: linear-gradient(180deg, #ade6cd, #3d7b98);
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    width: 90%; /* Full width on mobile */
+    max-width: 30rem; /* Maximum width */
+    margin: 1rem; /* Adjust margin for better spacing */
+    font-size: 1rem;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+    .Personal-loan-tog {
+        flex-direction: row; /* Switch back to row on larger screens */
+        justify-content: center; /* Center items */
+    }
+
+    .Choose-l-three {
+        flex-direction: row; /* Row layout for larger screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .img-overlay-text {
+        font-size: 1.5rem; /* Smaller text on mobile */
+    }
+}

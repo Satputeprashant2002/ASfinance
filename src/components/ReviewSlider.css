@@ -1,0 +1,151 @@
+.review-container {
+    border: 2px rgba(0, 0, 0, 0.262) solid;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 7rem;
+    padding: 2rem;
+    height: 10rem;
+    width: 50rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .review-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Align all content to the left */
+    transition: transform 0.3s ease-in-out;
+    padding: 10px;
+  }
+  
+  .review-slide h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  
+  .review-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .star-image {
+    width: 20px; /* Adjust the size of the star image */
+    height: auto;
+    margin-right: 2px; /* Space between stars */
+  }
+  
+  .review-text {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+  }
+  
+  .dots-container {
+    margin-top:2rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%; /* Center the dots horizontally */
+    transform: translateX(-50%); /* Fine-tune centering */
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #38389c;
+  }
+  
+  .dot:hover {
+    background-color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .review-container {
+      width: 90%;  /* Adjust the width for smaller screens */
+      margin-left: 5%;  /* Center the container */
+      padding: 1rem;  /* Less padding on mobile */
+      height: auto;  /* Let the height adjust based on content */
+    }
+    
+    .review-slide h3 {
+      font-size: 1.2em;  /* Slightly smaller text for headings */
+      padding-bottom: 5px;
+    }
+  
+    .review-rating {
+      margin-bottom: 8px;  /* Less space between stars and review text */
+    }
+  
+  
+    .review-text {
+      font-size: 0.9em;  /* Smaller font for review text */
+      margin: 0;
+    }
+  
+    .dots-container {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .dot {
+      width: 8px;
+      height: 8px;
+      margin: 0 3px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .review-container {
+      width: 80%;  /* Even smaller on very small screens */
+      margin-right: 2rem;
+      padding: 0.8rem;  /* Less padding */
+    }
+  
+    .review-slide h3 {
+      font-size: 1em;  /* Smaller font size */
+      padding-bottom: 5px;
+    }
+  
+    .review-rating {
+      margin-bottom: 6px;  /* Less space */
+    }
+  
+    .star-image {
+      width: 14px;  /* Even smaller stars */
+      margin-right: 1px;
+    }
+  
+    .review-text {
+      font-size: 0.85em;  /* Even smaller text */
+    }
+  
+    .dots-container {
+      margin-top: 0.8rem;
+    }
+  
+    .dot {
+      width: 6px;  /* Smaller dots for smaller screen */
+      height: 6px;
+      margin: 0 3px;
+    }
+  }

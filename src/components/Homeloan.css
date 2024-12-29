@@ -1,0 +1,70 @@
+.Hloan{
+    overflow:hidden;
+}
+
+.img-home-tog {
+    display: flex;
+    flex-direction: row; /* Default layout for larger screens */
+    justify-content: center; /* Center items */
+    gap: 3rem; /* Gap between items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.himg img {
+    height: 25rem; /* Maintain aspect ratio */
+    width: 100%; /* Full width */
+    border-radius: 2rem;
+    margin: 2rem;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.home-text {
+    background: linear-gradient(180deg, #ade6cd, #3d7b98);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin-top: 3.5rem;
+    margin-left: 3rem;
+    height: 20rem;
+    width: 87%; /* Full width on mobile */
+    max-width: 30rem; /* Maximum width */
+    font-size: 1rem;
+}
+
+.home-text1{
+    background: linear-gradient(180deg, #ade6cd, #3d7b98);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin-top: 3.5rem;
+    margin-left: 3rem;
+    height:auto;
+    width: 87%; /* Full width on mobile */
+    max-width: 30rem; /* Maximum width */
+    font-size: 1rem; 
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .img-home-tog {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items */
+    }
+
+    .home-text,.home-text1 {
+        margin-left: 0; /* Remove left margin on mobile */
+        width: 80%;
+        height: auto; /* Slightly increase width for better appearance on mobile */
+        margin-top: 1.5rem; /* Adjust top margin */
+    }
+
+    .himg{
+        width:98%;
+        margin-top:3rem;
+        justify-self: center;   
+    }
+
+    .himg img {
+        height: auto; /* Allow height to adjust based on content */
+        max-width: 98%; /* Ensure images do not overflow */
+        margin: 0; /* Reset margin on mobile */
+    }
+}

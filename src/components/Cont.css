@@ -1,0 +1,201 @@
+.contact-contP{
+    background: #f5f5f5;
+    overflow:hidden;
+}
+
+.contact-cont{
+    overflow:hidden;
+    background: #f5f5f5;
+    display: flex;
+    gap: 4rem;
+    justify-content: space-around;
+    margin-top: 0;
+    padding: 5rem 4rem 3rem 5rem;
+font-family: 'Roboto', sans-serif;
+   
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    unicode-bidi: isolate;
+}
+
+.contact-left-1{
+    background: #fff;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    width: 28rem;
+    unicode-bidi: isolate;
+}
+
+.log{
+    border: 1px dashed #000;
+    outline: 1px dashed #000;
+    outline-offset: 2px;
+    padding: 1.8rem;
+    position: relative;
+    display: block;
+    unicode-bidi: isolate;
+}
+.log i{
+    color: #204c79;
+    font-size: 1.5rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+.fa-solid fa-location-dot {
+    font-weight: 900;
+}
+.contact-left-info{
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+
+.contact-address{
+    font-size: .8rem;
+    width: 20rem;
+    display: block;
+    unicode-bidi: isolate;
+    margin-top: .5rem;
+
+}
+.con-info{
+    display: block;
+    unicode-bidi: isolate;
+}
+.contact-right{
+    display: block;
+    unicode-bidi: isolate;
+}
+.contact-right iframe{
+    border: 0;
+    height: 21rem;
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+    width: 32rem;
+}
+
+.Form {
+    
+    text-align: center;
+    align-items: center;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+.Form-sub {
+    margin: 0 auto; /* Center the form */
+    width: 90%; /* Use a percentage for responsive width */
+    max-width: 512px; /* Maintain max width */
+    height: auto;
+    gap: 3rem;
+    background: #fff;
+    padding: 2rem;
+}
+
+.two-ipu {
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem; /* Adjust font size for mobile */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.two-ipu input {
+    background: #e4e2e2;
+    border: 0;
+    height: 3rem;
+    width: calc(50% - .8rem); /* Adjust width for responsiveness */
+    text-align: center;
+    margin: 10px 0; /* Use vertical margin for spacing */
+    border-radius: 10px;
+}
+
+.single-ipu {
+    
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+}
+
+.single-ipu select {
+    background: #e4e2e2;
+    border: 0;
+    height: 3rem;
+    width: 100%; /* Full width for select elements */
+    margin: 10px 0; /* Use vertical margin for spacing */
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.st-head {
+    color: #204c79;
+    text-align: center;
+}
+
+.messa input {
+    background: #e4e2e2;
+    border: 0;
+    height: 4rem;
+    margin: 3px 0; /* Use vertical margin for spacing */
+    width: 94%; /* Full width for message input */
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 7px;
+}
+
+.butt {
+    margin-top: 2rem;
+    align-self: center;
+}
+
+.butt button {
+    background: #00008b;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    height: 3rem;
+    font-size:1.3rem ;
+    border: none;
+    padding: 0.6rem 5rem;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .contact-cont {
+        padding: 3rem 2rem; /* Reduce padding on smaller screens */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align for better appearance */
+    }
+
+    .contact-left-1 {
+        flex-direction: column; /* Stack icon and text vertically */
+        width: 90%; /* Full width for better accessibility */
+    }
+
+    .contact-right iframe {
+        height: 18rem; /* Adjust height for smaller screens */
+        width:100%
+    }
+
+    .messa input{
+        width:91%;  
+    }
+
+    .Form-sub {
+        padding-left:1.3rem;
+    }
+    
+}

@@ -1,0 +1,24 @@
+/* Increase the height of the chatbox */
+.floating-whatsapp-chatbox {
+  max-height: 1500px;  /* Increased height for the chatbox */
+  overflow-y: auto;    /* Enable vertical scrolling */
+         
+}
+
+/* Control message box content appearance */
+.floating-whatsapp-message {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  word-wrap: break-word;
+  max-width: 90%;
+  padding: 8px;
+}
+
+
+.floating-whatsapp-chatbox::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.floating-whatsapp-chatbox::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
